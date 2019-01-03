@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar></NavBar>
-    <p>메인</p>
+    <router-view></router-view>
   </div>
 </template>
 

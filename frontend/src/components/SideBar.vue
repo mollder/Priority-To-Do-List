@@ -1,10 +1,8 @@
 <template>
   <div class="side-contanier">
-    <b-nav vertical tabs>
-        <b-nav-item>Getting Strated</b-nav-item>
-        <b-nav-item>Lightweight To-do's</b-nav-item>
-        <b-nav-item>Personal Home</b-nav-item>
-        <b-nav-item>Notes & Drafts</b-nav-item>
+    <b-nav vertical>
+        <b-nav-item>Todo List</b-nav-item>
+        <b-nav-item>Calendar</b-nav-item>
     </b-nav>
   </div>
 </template>
@@ -16,5 +14,8 @@
 </script>
 
 <style scoped>
-
+.side-contanier {
+  height : 100%;
+  background-color: rgb(247, 246, 243);
+}
 </style>

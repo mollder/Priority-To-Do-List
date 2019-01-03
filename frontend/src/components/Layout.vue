@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <div class="row">
-      <SideBar class="col-2"></SideBar>
-      <AppMain class="col-10"></AppMain>
+      <SideBar class="col-3"></SideBar>
+      <AppMain class="col-9"></AppMain>
     </div>
   </div>
 </template>
@@ -12,7 +12,7 @@ import SideBar from './SideBar.vue';
 import AppMain from './AppMain.vue';
 
 export default {
-  name: 'HelloWorld',
+  name: 'Layout',
   components : {
     SideBar,
     AppMain
@@ -27,5 +27,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.hello {
+  height : 100%
+}
+.row {
+  height : 100%
+}
 </style>

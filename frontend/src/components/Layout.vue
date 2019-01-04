@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <div class="row">
-      <SideBar class="col-3"></SideBar>
-      <AppMain class="col-9"></AppMain>
+      <SideBar class="col-2"></SideBar>
+      <AppMain class="col-10"></AppMain>
     </div>
   </div>
 </template>
@@ -32,5 +32,9 @@ export default {
 }
 .row {
   height : 100%
+}
+.col-2 {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 </style>

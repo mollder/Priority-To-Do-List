@@ -19,6 +19,7 @@
   height : 100%;
   background-color: rgb(247, 246, 243);
   width: 100%;
+  text-align: center;
 }
 .side-bar {
   width: 100%;

@@ -1,8 +1,9 @@
 <template>
   <div class="side-contanier">
     <b-nav vertical>
-        <b-nav-item>Todo List</b-nav-item>
-        <b-nav-item>Calendar</b-nav-item>
+      <b-nav-item :to="{path: '/'}">Home</b-nav-item>
+      <b-nav-item :to="{path: '/todolist'}">Todo List</b-nav-item>
+      <b-nav-item :to="{path: '/calendar'}">Calendar</b-nav-item>
     </b-nav>
   </div>
 </template>

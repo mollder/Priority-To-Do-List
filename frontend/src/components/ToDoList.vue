@@ -3,11 +3,11 @@
     <p>처리 목록</p>
 
     <ul>
-      <li v-for="todo in todoList" v-bind:key="todo.priority">
+      <li v-for="todo in todoLists" v-bind:key="todo.priority">
         <b-row>
         <b-col cols = "1"><span class="priority"> {{todo.priority}}.</span></b-col>
         <b-col cols = "8"><span class="title">   {{todo.title}} - {{ todo.summary }} </span></b-col>
-        <b-col><span class="D-day"> D-day : {{ todo.dDay }} </span></b-col>
+        <b-col><span class="D-day"> D-day : {{ todo.dday }} </span></b-col>
         </b-row>
       </li>
     </ul>
@@ -21,8 +21,8 @@
         name: "ToDoList",
         data: function () {
           return {
-            todoList: []
-          }
+            todoLists: [],
+          };
         },
         created() {
           this.getTodoLists();
@@ -32,9 +32,9 @@
             axios({
               method: 'get',
               url : './todoLists',
-            }).then(function (response) {
-              this.todoList = response.data;
-            })
+            }).then(response => {
+              this.todoLists = response.data;
+            });
           }
         }
     }

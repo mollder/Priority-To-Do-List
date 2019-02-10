@@ -1,7 +1,6 @@
 package org.project.collabo.domain;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +10,10 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
+@Builder
+@EqualsAndHashCode
 @NoArgsConstructor
+@AllArgsConstructor
 public class TodoList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,14 +23,5 @@ public class TodoList {
     private String summary;
     private String content;
     private LocalDateTime dDay;
-
-    public TodoList(int priority, String title, String summary, String content, LocalDateTime dDay) {
-        this.priority = priority;
-        this.title = title;
-        this.summary = summary;
-        this.content= content;
-        this.dDay = dDay;
-    }
-
 
 }
